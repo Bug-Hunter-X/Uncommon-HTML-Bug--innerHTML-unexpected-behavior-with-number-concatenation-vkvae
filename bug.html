@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+
+  <script>
+    // This code attempts to change the content of the div,
+    // but it uses innerHTML incorrectly, leading to unexpected behavior
+    document.getElementById("myDiv").innerHTML = "<p>This is a paragraph.</p>" + 123;
+  </script>
+</body>
+</html>
